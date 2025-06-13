@@ -1,4 +1,4 @@
-
+// VM IAC (VM Infrastrure as Codes)
 provider "google" {
   project = var.project_id  # TODO: Ensure this matches your actual project
   region  = var.region
@@ -7,6 +7,7 @@ provider "google" {
 
 terraform {
   required_providers {
+
     google = {
       source  = "hashicorp/google"
       version = "~> 5.0"
